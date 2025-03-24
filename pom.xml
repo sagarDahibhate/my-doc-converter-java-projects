@@ -99,6 +99,7 @@
 							<artifactId>lombok</artifactId>
 						</exclude>
 					</excludes>
+					<finalName>demo</finalName>
 				</configuration>
 			</plugin>
 		</plugins>

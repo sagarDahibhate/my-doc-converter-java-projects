@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix - Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                        url('https://assets.nflxext.com/ffe/siteui/vlv3/9c5457b8-9ab0-4a04-9fc1-e608d5670f1a/710d74e0-7158-408e-8d9b-23c219dee5df/IN-en-20210719-popsignuptwoweeks-perspective_alpha_website_small.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            color: #fff;
+            min-height: 100vh;
+        }
+
+        .header {
+            padding: 20px 50px;
+        }
+
+        .netflix-logo {
+            height: 45px;
+        }
+
+        .login-container {
+            max-width: 450px;
+            margin: 0 auto;
+            padding: 60px 68px 40px;
+            background-color: transparent;
+            border-radius: 4px;
+            margin-top: 20px;
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        h1 {
+            margin-bottom: 28px;
+            font-size: 32px;
+            font-weight: 500;
+        }
+
+        .form-input {
+            height: 50px;
+            border-radius: 4px;
+            border: none;
+            background-color: #333;
+            padding: 16px;
+            color: #fff;
+            font-size: 16px;
+        }
+
+        .form-input:focus {
+            outline: none;
+            background-color: #454545;
+        }
+
+        .login-button {
+            height: 50px;
+            border-radius: 4px;
+            border: none;
+            background-color: #e50914;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            margin-top: 24px;
+        }
+
+        .login-button:hover {
+            background-color: #f40612;
+        }
+
+        .remember-me {
+            display: flex;
+            justify-content: space-between;
+            color: #b3b3b3;
+            font-size: 13px;
+        }
+
+        .help-section {
+            margin-top: 16px;
+            color: #b3b3b3;
+        }
+
+        .signup-now {
+            color: #737373;
+            font-size: 16px;
+            margin-top: 16px;
+        }
+
+        .signup-now a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .signup-now a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix" class="netflix-logo">
+    </header>
+
+    <main>
+        <div class="login-container">
+            <h1>Sign In</h1>
+            <form class="login-form">
+                <input type="email" placeholder="Email or phone number" class="form-input" required>
+                <input type="password" placeholder="Password" class="form-input" required>
+                <button type="submit" class="login-button">Sign In</button>
+                
+                <div class="remember-me">
+                    <label>
+                        <input type="checkbox"> Remember me
+                    </label>
+                    <a href="#" style="color: #b3b3b3; text-decoration: none;">Need help?</a>
+                </div>
+            </form>
+
+            <div class="help-section">
+                <p>New to Netflix? <a href="#" style="color: #fff; text-decoration: none;">Sign up now</a></p>
+            </div>
+
+            <div class="signup-now">
+                <p>This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#">Learn more.</a></p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
